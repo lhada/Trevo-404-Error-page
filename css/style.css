@@ -1,0 +1,289 @@
+/* - General styles */
+
+/* Navy      #160B38 */
+/* purple    #8054F6 */
+/* blue      #ADDFFF */
+/* pale blue #F0F9FF */
+/* orange    #FF735F */
+
+html, * {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+body {
+    background-color: #F0F9FF;
+}
+
+ul li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* header */    
+
+header{
+    margin:50px 20px 0px 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo, nav {
+    flex: 1 ;
+}
+
+nav {
+    flex: 2 550px;
+    margin-right: 10%;
+    transition: margin 0.5s;
+}
+
+.logo {
+    margin-left: 10%;
+    transition: margin 0.5s;
+}
+
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    align-items: center;
+    margin: 0;
+}
+
+nav a {
+    color: #160B38;
+    padding: 8px 25px;
+}
+
+.button a{
+    color: white;
+    background-color: #3B1C99;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+
+.button a:hover{
+    background-color: rgb(33, 14, 92);
+}
+
+
+
+
+
+/* main */  
+
+
+
+main {
+    margin-top: 70px;
+}
+.design-left {
+    position: absolute;
+    bottom: 0px;
+    height: 500px;
+    width: 500px;
+    background: url(../images/Shape-background.png) no-repeat  -100px top/cover;
+    transition: background 0.5s;
+    z-index: -2;
+}
+
+.content {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.oops {
+    margin-right: 30px;
+    padding-left: 35px;
+    margin-top: 70px;
+    margin-left: 10%;
+    width: 280px;
+    min-width: 280px;
+    background: url(../images/Lines.png) no-repeat left top;
+    transition: margin-left 0.5s;
+}
+
+.oops div {
+    margin: 30px 0px;
+}
+.oops .title {
+    text-decoration: none;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 0;
+}
+
+.oops .home {
+    margin: 20px 0 0 0px;
+}
+
+.oops .text {
+    word-spacing: 4px;
+    line-height: 1.5em;
+}
+.oops .home a{
+    background-color: #8054F6;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+
+.illu {
+    margin-right: 5%;
+    height:400px;
+    width: 500px;
+    background: url(../images/Illu404.png) no-repeat center/contain;
+    transition: all 0.5s;
+}
+
+
+@media screen and (max-width:1020px){
+    nav {
+        margin: 0;
+    }
+    .logo {
+        margin: 0;
+    }
+
+    .oops {
+        margin-left: 0px;
+    }
+
+    .design-left {
+        background: url(../images/Shape-background.png) no-repeat  -220px -50px/cover;
+    }
+
+}
+
+
+
+@media screen and (max-width:850px){
+    header {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+
+    .design-left {
+        display: none;
+    }
+    nav {
+        margin-top: 20px;
+        background-color: teal;
+        padding: 0;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+
+    nav ul{
+        display: block;
+    }
+    nav ul li {
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        color: white;
+        width: 100%;
+        padding: 8px 0px;
+        transition: background 0.5s;
+    }
+
+    nav ul li a:hover {
+        display: inline-block;
+        color: white;
+        width: 100%;
+        padding: 8px 0px;
+        background-color: rgb(45, 182, 168);
+    }
+
+    .logo {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+    button {
+        position: absolute;
+        right: 10px;
+        top:15px;
+        display: inline-block;
+        border: none;
+        background-color: none;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .hum span {
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: #3B1C99;
+        margin:3px 0px;
+    }
+
+    .hum:focus + nav, .hum:active + nav {
+        height: 170px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .oops {
+        margin: 50px 0 30px 0;
+        text-align: center;
+    }
+    main {
+        position: relative;
+        top: 50px;
+        margin-top: 0px;
+    }
+
+    .illu {
+        height: 300px;
+        width: 300px;
+        margin: 0px;
+        transition: none;
+    }
+    .home a{
+        display: block;
+        margin: 0 50px;
+        text-align: center;
+    }
+
+    .oops div {
+        margin: 10px 0;
+    }
+}
