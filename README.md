@@ -1,2 +1,5 @@
 # Trevo-404-Error-page
-An pure HTML/CSS error page
+A pure HTML/CSS error page
+Layout using flexbox.
+Responsive to all devices.
+
