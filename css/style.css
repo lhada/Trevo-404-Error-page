@@ -102,6 +102,7 @@ main {
     width: 500px;
     background: url(../images/Shape-background.png) no-repeat  -100px top/cover;
     transition: background 0.5s;
+    z-index: -1;
 }
 
 .content {
